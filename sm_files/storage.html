@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Murlan exrcise</title>
+       <link rel="stylesheet" type="text/css" href="storage.css">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Funda of Web IT</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+       <title>Storage Management Page</title>
+       <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+       <title>Table with database</title>
+           <style>
+               table {
+                   border-collapse: collapse;
+                   width: 100%;
+                   color: #588c7e;
+                   font-family: monospace;
+                   font-size: 25px;
+                   text-align: left;
+               }
+               th {
+                   background-color: #588c7e;
+                   color: white;
+               }
+               tr:nth-child(even) {background-color: #f2f2f2}
+           </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">Murlan</div>
+            <ul>
+                <li><a href="sm_home.html">HOME</a></li>
+                <li><a href="storage.html">STORAGE</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+
+        </nav>    
+        <section> 
+            <div class="container">
+                <div class="row col-md-6 col-md-offset-3">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                      <h1>Storage Management</h1>
+                    </div>
+                    <div class="panel-body">
+                      <form action="connect.php" method="post">
+                        <div class="form-group">
+                          <label for="productsname">Product Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="productsname"
+                            name="productsname"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="productsneeded">Products Needed</label>
+                          <input
+                            type="int"
+                            class="form-control"
+                            id="productsneeded"
+                            name="productsneeded"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="productstorageavailability">Product's Storage Availability</label>
+                           <input
+                                type="int"
+                                class="form-control"
+                                id="productstorageavailability"
+                                name="productstorageavailability"
+                          />
+                        <input type="submit" class="btn btn-primary" /><br>
+                      </form>
+                    </div>
+                    <div class="panel-footer text-right">
+                      </div>
+                      <table>
+                          <tr>
+                          <th>Id</th>
+                          <th>Products Name</th>
+                          <th>Products Needed</th>
+                          <th>Products Storage Availability</th>
+                          </tr>
+                      </table>
+                      
+                      <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-md-8">
+          
+          
+                          <div class="card mt-5">
+                              <div class="card-header">
+                                  <h4>Update Product Data by ID</h4>
+                              </div>
+                              <div class="card-body">
+          
+                                  <form action="code.php" method="POST">
+          
+                                      <div class="form-group mb-3">
+                                          <label for="">ID</label>
+                                          <input type="text" name="id" class="form-control" >
+                                      </div>
+                                      <div class="form-group mb-3">
+                                          <label for="">Products Name</label>
+                                          <input type="text" name="productsname" class="form-control" >
+                                      </div>
+                                      <div class="form-group mb-3">
+                                          <label for="">Products Needed</label>
+                                          <input type="int" name="productsneeded" class="form-control" >
+                                      </div>
+                                      <div class="form-group mb-3">
+                                          <label for="">Product's Storage Availability</label>
+                                          <input type="int" name="productstorageavailability" class="form-control" >
+                                      </div>
+                                      <div class="form-group mb-3">
+                                          <button type="submit" name="update_stud_data" class="btn btn-primary">Update Data</button>
+                                      </div>
+          
+                                  </form>
+          
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-md-8">
+          
+          
+                          <div class="card mt-5">
+                              <div class="card-header">
+                                  <h4>Delete Data from Database by ID</h4>
+                              </div>
+                              <div class="card-body">
+          
+                                  <form action="code2.php" method="POST">
+                                      <div class="froum-group mb-3">
+                                          <label for="">Deleteing ID</label>
+                                          <input type="text" name="delete_stud_id" class="form-control">
+                                      </div>
+                                      <div class="froum-group mb-3">
+                                          <button type="submit" name="stud_delete_btn" class="btn btn-primary">Delete Data</button>
+                                      </div>
+                                  </form>
+          
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </section>
+
+    </body>
+</html>   
+    

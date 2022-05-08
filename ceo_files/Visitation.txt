@@ -1,0 +1,8 @@
+Visitation: 10, Date: 2022-05-02T20:28, Goal Percentage: 20%
+Visitation: 10, Date: 2022-06-02T20:28, Goal Percentage: 20%
+Visitation: 22, Date: 2022-07-02T20:31, Goal Percentage: 44%
+Visitation: 50, Date: 2022-08-02T20:32, Goal Percentage: 100%
+Visitation: 70, Date: 2022-09-02T20:32, Goal Percentage: 140%
+Visitation: 70, Date: 2022-10-02T20:32, Goal Percentage: 140%
+Visitation: 70, Date: 2022-11-02T20:32, Goal Percentage: 140%
+
