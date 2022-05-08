@@ -19,27 +19,40 @@
 
         </nav>   
          
-        <section> 
-            <h1>Submit Day's Ads Visitation</h1>
-            <form name = formvisits action = "index.php" method="get">
-                Visitation: <input type="int" name="visits"><br>
-                Date : <input class="form-control" type = "datetime-local" placeholder="Select Date" name = "date"><br>
-                <h1></h1><br>
-                <input type =  "submit" value = "submit" onClick="findPer()">
-            </form>
-            <script type="text/javascript">
-                function findPer()
-                {
-                var visitsnum;
-                visitnum = Number(document.formvisits.visits.value);
-                goal = (visitnum/50*100);
-                document.formvisits.percentage.value = goal;
-                }
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <section>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1><center>Submit Day's Ads Visitation</center></h1>
+            <center>
+                <form name=formvisits action="index.php" method="get">
+                    Visitation: <input type="int" name="visits"><br>
+                    Date : <input class="form-control" type="datetime-local" placeholder="Select Date" name="date"><br>
+                    <h1></h1><br>
+                    <input type="submit" value="submit" onClick="findPer()">
+                </form>
+                <script type="text/javascript">
+                    function findPer() {
+                        var visitsnum;
+                        visitnum = Number(document.formvisits.visits.value);
+                        goal = (visitnum / 50 * 100);
+                        document.formvisits.percentage.value = goal;
+                    }
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 
-            <a href="Visitation.txt" target="_blank">View Advertising Data</a>
+                <a href="Visitation.txt" target="_blank">View Advertising Data</a>
+            </center>
         </section>
         
         
